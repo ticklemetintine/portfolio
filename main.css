@@ -1,0 +1,324 @@
+/* line 1, styles/_global.scss */
+body {
+  background: #333;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-animation: fadein 5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 5s;
+  /* Internet Explorer */
+  -o-animation: fadein 5s;
+  /* Opera < 12.1 */
+  animation: fadein 5s;
+}
+/* line 12, styles/_global.scss */
+body * {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/* line 24, styles/_global.scss */
+header {
+  margin-bottom: 40px;
+}
+
+/* line 28, styles/_global.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Galada", cursive;
+}
+
+@keyframes fadein {
+  /* line 33, styles/_global.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 34, styles/_global.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  /* line 39, styles/_global.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 40, styles/_global.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  /* line 45, styles/_global.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 46, styles/_global.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  /* line 51, styles/_global.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 52, styles/_global.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  /* line 57, styles/_global.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 58, styles/_global.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 1, styles/_header.scss */
+.navbar {
+  padding: 20px 0;
+  margin-bottom: 0;
+  border-bottom: solid 1px #000;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 9, styles/_header.scss */
+.navbar .nav {
+  width: 100%;
+  text-align: center;
+}
+/* line 13, styles/_header.scss */
+.navbar .nav li {
+  float: none;
+  display: inline-block;
+}
+/* line 17, styles/_header.scss */
+.navbar .nav li a {
+  text-transform: uppercase;
+  color: #fff;
+  transition: all .5s ease;
+  padding: 10px 15px;
+}
+/* line 23, styles/_header.scss */
+.navbar .nav li a:hover, .navbar .nav li a:active, .navbar .nav li a:visited, .navbar .nav li a:focus {
+  background-color: #000;
+  color: #86267c;
+  border-radius: 3px;
+  transition: all .5s ease;
+}
+
+/* line 2, styles/_styles.scss */
+.home .home-heading {
+  font-size: 3.750em;
+}
+/* line 6, styles/_styles.scss */
+.home button {
+  margin: 15px auto;
+}
+
+/* line 13, styles/_styles.scss */
+.about .row .avatar {
+  border-radius: 400px;
+  display: block;
+  margin: auto;
+  border: solid 4px #fff;
+}
+
+/* line 22, styles/_styles.scss */
+.projects {
+  margin-bottom: 60px;
+}
+/* line 24, styles/_styles.scss */
+.projects .title {
+  font-family: "Galada", cursive;
+  font-size: 2.500em;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+/* line 30, styles/_styles.scss */
+.projects .description {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* line 39, styles/_styles.scss */
+.contact .details p {
+  font-size: 24px;
+  font-family: "Galada", cursive;
+}
+/* line 43, styles/_styles.scss */
+.contact .details a {
+  transition: color 1s ease;
+}
+/* line 46, styles/_styles.scss */
+.contact .details a:hover {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 1s ease;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 3, styles/_mediaqueries.scss */
+  .about img {
+    width: 100%;
+  }
+}
+/* line 3, styles/_utilities.scss */
+.text-white {
+  color: #ffffff;
+}
+
+/* line 4, styles/_utilities.scss */
+.text-pink {
+  color: #86267c;
+}
+
+/* line 7, styles/_utilities.scss */
+.btn {
+  color: #ddd;
+  margin: 10px auto;
+}
+/* line 11, styles/_utilities.scss */
+.btn.btn-pink {
+  background-color: #bb34ae;
+}
+/* line 14, styles/_utilities.scss */
+.btn.btn-pink:hover {
+  background-color: #86267c;
+}
+/* line 19, styles/_utilities.scss */
+.btn:hover, .btn:active, .btn:visited, .btn:focus {
+  color: #ddd;
+}
+
+/* line 26, styles/_utilities.scss */
+.text-center {
+  text-align: center;
+  margin: auto;
+}
+
+/* line 30, styles/_utilities.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 31, styles/_utilities.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 32, styles/_utilities.scss */
+.block {
+  display: block;
+}
+
+/* line 36, styles/_utilities.scss */
+.slide {
+  position: relative;
+  padding: 25vh 5%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+/* line 43, styles/_utilities.scss */
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 52, styles/_utilities.scss */
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+/* line 56, styles/_utilities.scss */
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* line 63, styles/_utilities.scss */
+.flip-container {
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+/* line 67, styles/_utilities.scss */
+.flip-container:hover .flipper, .flip-container .hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/* line 73, styles/_utilities.scss */
+.flip-container, .front, .back {
+  min-height: 320px;
+}
+
+/* flip speed goes here */
+/* line 79, styles/_utilities.scss */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+/* line 87, styles/_utilities.scss */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 320px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* front pane, placed above back */
+/* line 100, styles/_utilities.scss */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  background: #fff;
+}
+/* line 106, styles/_utilities.scss */
+.front img {
+  width: 100%;
+}
+
+/* back, initially hidden pane */
+/* line 112, styles/_utilities.scss */
+.back {
+  transform: rotateY(180deg);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}

@@ -1,0 +1,116 @@
+// TEXT COLOR
+
+.text-white { color: #ffffff; }
+.text-pink { color: #86267c; }
+
+// BUTTON COLORS
+.btn {
+	color: #ddd;
+  margin: 10px auto; 
+
+	&.btn-pink { 
+		background-color: #bb34ae; 
+
+		&:hover {
+			background-color: #86267c;
+		}
+	}
+
+	&:hover, &:active, &:visited, &:focus {
+		color: #ddd;
+	}
+}
+
+// TEXT ALIGNMENT
+
+.text-center { 
+	text-align: center; 
+	margin: auto;
+}
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.block { display: block; }
+
+// PARALLAX
+
+.slide {
+  position: relative;
+  padding: 25vh 5%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  transform-style: inherit;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+  }
+
+  &:nth-child(2n) .title {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &:nth-child(2n+1) .title {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+// IMAGE FLIP
+.flip-container {
+  perspective: 1000px;
+  margin-bottom: 20px;
+  &:hover, .hover {
+    .flipper {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+.flip-container, .front, .back {
+  min-height: 320px;
+}
+
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 320px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  background: #fff;
+
+  img {
+    width: 100%;
+  }
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  background: rgba(255,255,255,.5);
+  padding: 20px;
+}
