@@ -2,7 +2,7 @@ export class ProjectService {
 	getProject() {
 		return [
 		  {img: 'img/news.png', title: 'ABS-CBN News', description: 'A responsive site for ABS-CBN. Created using HTML, CSS/Sass and JQuery.', link: 'http://www.news.abs-cbn.com/'},
-		  {img: 'img/imaginepartners.png', title: 'Imagine Partners', description: 'Responsive website for Imagine Partners, USA. Created using WordPress', link: 'http://www.news.abs-cbn.com/'},
+		  {img: 'img/imaginepartners.png', title: 'Imagine Partners', description: 'Responsive website for Imagine Partners, USA. Created using WordPress', link: 'http://imaginepartnersllc.com/'},
 		  {img: 'img/phillips.png', title: 'Phillips Family Law', description: 'Responsive website for Phillips Family Law, Australia. Created using WordPress', link: 'https://www.phillipsfamilylaw.com.au/'},
 		  {img: 'img/bpo.png', title: 'BPO BackOffice Inc', description: 'Responsive website for BPO BackOffice Inc., Philippines. Created using WordPress', link: 'http://www.bpobackoffice.com/'},
 		  {img: 'img/copiersleasing.png', title: 'Copiers Leasing Central', description: 'A static website for Copiers Leasing Central, USA. Created using HTML, CSS and Javascript/JQuery', link: 'http://www.copiersleasing.com/'},
