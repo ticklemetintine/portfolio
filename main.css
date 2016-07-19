@@ -26,22 +26,17 @@ body * {
 }
 
 /* line 24, styles/_global.scss */
-header {
-  margin-bottom: 40px;
-}
-
-/* line 28, styles/_global.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Galada", cursive;
 }
 
 @keyframes fadein {
-  /* line 33, styles/_global.scss */
+  /* line 29, styles/_global.scss */
   from {
     opacity: 0;
   }
 
-  /* line 34, styles/_global.scss */
+  /* line 30, styles/_global.scss */
   to {
     opacity: 1;
   }
@@ -49,12 +44,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-  /* line 39, styles/_global.scss */
+  /* line 35, styles/_global.scss */
   from {
     opacity: 0;
   }
 
-  /* line 40, styles/_global.scss */
+  /* line 36, styles/_global.scss */
   to {
     opacity: 1;
   }
@@ -62,12 +57,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-  /* line 45, styles/_global.scss */
+  /* line 41, styles/_global.scss */
   from {
     opacity: 0;
   }
 
-  /* line 46, styles/_global.scss */
+  /* line 42, styles/_global.scss */
   to {
     opacity: 1;
   }
@@ -75,12 +70,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-  /* line 51, styles/_global.scss */
+  /* line 47, styles/_global.scss */
   from {
     opacity: 0;
   }
 
-  /* line 52, styles/_global.scss */
+  /* line 48, styles/_global.scss */
   to {
     opacity: 1;
   }
@@ -88,12 +83,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-  /* line 57, styles/_global.scss */
+  /* line 53, styles/_global.scss */
   from {
     opacity: 0;
   }
 
-  /* line 58, styles/_global.scss */
+  /* line 54, styles/_global.scss */
   to {
     opacity: 1;
   }
@@ -133,16 +128,29 @@ h1, h2, h3, h4, h5, h6 {
   transition: all .5s ease;
 }
 
-/* line 2, styles/_styles.scss */
+/* line 1, styles/_styles.scss */
+.home {
+  padding: 0;
+}
+/* line 3, styles/_styles.scss */
+.home .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: auto auto;
+  height: 130px;
+}
+/* line 12, styles/_styles.scss */
 .home .home-heading {
   font-size: 3.750em;
 }
-/* line 6, styles/_styles.scss */
+/* line 16, styles/_styles.scss */
 .home button {
   margin: 15px auto;
 }
 
-/* line 13, styles/_styles.scss */
+/* line 23, styles/_styles.scss */
 .about .row .avatar {
   border-radius: 400px;
   display: block;
@@ -150,33 +158,33 @@ h1, h2, h3, h4, h5, h6 {
   border: solid 4px #fff;
 }
 
-/* line 22, styles/_styles.scss */
+/* line 32, styles/_styles.scss */
 .projects {
   margin-bottom: 60px;
 }
-/* line 24, styles/_styles.scss */
+/* line 34, styles/_styles.scss */
 .projects .title {
   font-family: "Galada", cursive;
   font-size: 2.500em;
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 30, styles/_styles.scss */
+/* line 40, styles/_styles.scss */
 .projects .description {
   font-weight: 300;
   margin-bottom: 20px;
 }
 
-/* line 39, styles/_styles.scss */
+/* line 49, styles/_styles.scss */
 .contact .details p {
   font-size: 24px;
   font-family: "Galada", cursive;
 }
-/* line 43, styles/_styles.scss */
+/* line 53, styles/_styles.scss */
 .contact .details a {
   transition: color 1s ease;
 }
-/* line 46, styles/_styles.scss */
+/* line 56, styles/_styles.scss */
 .contact .details a:hover {
   color: #ccc;
   text-decoration: none;
@@ -241,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 36, styles/_utilities.scss */
 .slide {
   position: relative;
-  padding: 25vh 5%;
+  padding: 5vh 5%;
   min-height: 100vh;
   box-sizing: border-box;
   transform-style: inherit;

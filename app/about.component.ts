@@ -7,11 +7,11 @@ import {Component} from '@angular/core'
 			<div class="row clearfix">
 				<div class="col-sm-6 col-xs-12">
 					<h1>{{heading}}</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit, fugiat ipsam, explicabo harum, nam dolores dolorem corporis consequatur excepturi adipisci similique repellendus quod qui praesentium vero atque, porro quisquam.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt non iusto sequi quod iste quos, quia consectetur dolores quam libero nesciunt nostrum aliquid. Eos, hic quam blanditiis totam ut consequatur!</p>
+					<p>A web developer based in the Philippines. Finished a degree in Information Technology at FEU-Institute of Technology. Been in the industry for more than 3 years and have worked with some big companies in the PH. A freelance developer servicing clients from US and Australia.</p>
+					<p>Expertise in HTML, CSS/Sass, JQuery/AngularJS and WordPress.</p>
 				</div>
 				<div class="col-sm-6 col-xs-12">
-					<img src="http://placehold.it/400x400" class="{{class.imgClass}}">
+					<img src="img/myAvatar.png" class="{{class.imgClass}}">
 				</div>
 			</div>
 		</div>

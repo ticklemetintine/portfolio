@@ -12,8 +12,8 @@ var core_1 = require('@angular/core');
 var HomeComponent = (function () {
     function HomeComponent() {
         this.id = "home";
-        this.heading = "Lorem ipsum dolor sit amet";
-        this.subHeading = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque maiores, quo dicta consequuntur numquam distinctio.";
+        this.heading = "Justine S. Salangsang";
+        this.subHeading = "Plan | Design | Code";
         this.buttonText = "See my work";
         this.class = {
             headingClass: "home-heading",

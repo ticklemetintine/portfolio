@@ -13,8 +13,8 @@ import {Component} from '@angular/core'
 
 export class HomeComponent {
 	id = "home";
-	heading = "Lorem ipsum dolor sit amet";
-	subHeading = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque maiores, quo dicta consequuntur numquam distinctio.";
+	heading = "Justine S. Salangsang";
+	subHeading = "Plan | Design | Code";
 	buttonText = "See my work";
 	class = {
 		headingClass: "home-heading",

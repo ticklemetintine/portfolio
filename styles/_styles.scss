@@ -1,4 +1,14 @@
 .home {
+	padding: 0;
+	.content {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 30%; 
+		// bottom: 0;
+		margin: auto auto;
+		height: 130px;
+	}
 	.home-heading {
 		font-size: 3.750em;
 	}
